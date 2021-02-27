@@ -47,27 +47,27 @@ Query the data to specify each of the following aspects of the data. Export the 
 
 * 4. List the department of each employee with the following information: employee number, last name, first name, and department name.
 <p align="center">
-  <img src="Images/query4.png" width="475">
+  <img src="Images/query4.png" width="450">
 </p>
 
 * 5. List first name, last name, and sex for employees whose first name is "Hercules" and last names begin with "B."
 <p align="center">
-  <img src="Images/query5.png" width="600">
+  <img src="Images/query5.png" width="650">
 </p>
 
 * 6. List all employees in the Sales department, including their employee number, last name, first name, and department name.
 <p align="center">
-  <img src="Images/query6.png" width="450">
+  <img src="Images/query6.png" width="430">
 </p>
 
 * 7. List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
 <p align="center">
-  <img src="Images/query7.png" width="500">
+  <img src="Images/query7.png" width="450">
 </p>
 
 * 8. In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
 <p align="center">
-  <img src="Images/query8.png" width="500">
+  <img src="Images/query8.png" width="450">
 </p>
 
 ## Visual Analysis
