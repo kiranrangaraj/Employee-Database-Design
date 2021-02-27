@@ -47,7 +47,7 @@ Query the data to specify each of the following aspects of the data. Export the 
 
 * 4. List the department of each employee with the following information: employee number, last name, first name, and department name.
 <p align="center">
-  <img src="Images/query4.png" width="440">
+  <img src="Images/query4.png" width="425">
 </p>
 
 * 5. List first name, last name, and sex for employees whose first name is "Hercules" and last names begin with "B."
