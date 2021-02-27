@@ -16,14 +16,17 @@ Further data analysis is then performed using SQLAlchemy and Psycopg2 libraries 
 ### Data Modeling
 * 1. Inspect the employee CSV data sets.
 * 2. Determine the data types, primary and foreign keys and other constraints.
-* 2. Sketch out an Entity Relationship Diagram (ERD) of the tables using https://www.quickdatabasediagrams.com/.
+* 3. Sketch out an Entity Relationship Diagram (ERD) of the tables using https://www.quickdatabasediagrams.com/.
+<p align="center">
+  <img src="Images/TableERD.png" width="400">
+</p>
 
 ### Data Engineering
 * 1. Create a PostgreSQL database using employee data.
 * 2. Create a table schema according to the ERD to hold each of the CSV files.
 * 3. Ensure the column used for primary key designation was unique to each table, otherwise specified a composite key.
 * 4. Ensure tables were created in the appropriate order to handle foreign keys.
-* 3. Import employee each CSV data file into the corresponding SQL table.
+* 5. Import employee each CSV data file into the corresponding SQL table.
 
 ### Query Analysis 
 Query the data to specify each of the following aspects of the data. Export the output as a new CSV file. 
@@ -34,37 +37,37 @@ Query the data to specify each of the following aspects of the data. Export the 
 
 * 2. List first name, last name, and hire date for employees who were hired in 1986.
 <p align="center">
-  <img src="Images/query2.png" width="400">
+  <img src="Images/query2.png" width="450">
 </p>
 
 * 3. List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name.
 <p align="center">
-  <img src="Images/query3.png" width="400">
+  <img src="Images/query3.png" width="500">
 </p>
 
 * 4. List the department of each employee with the following information: employee number, last name, first name, and department name.
 <p align="center">
-  <img src="Images/query4.png" width="400">
+  <img src="Images/query4.png" width="500">
 </p>
 
 * 5. List first name, last name, and sex for employees whose first name is "Hercules" and last names begin with "B."
 <p align="center">
-  <img src="Images/query5.png" width="400">
+  <img src="Images/query5.png" width="700">
 </p>
 
 * 6. List all employees in the Sales department, including their employee number, last name, first name, and department name.
 <p align="center">
-  <img src="Images/query6.png" width="400">
+  <img src="Images/query6.png" width="500">
 </p>
 
 * 7. List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
 <p align="center">
-  <img src="Images/query7.png" width="400">
+  <img src="Images/query7.png" width="550">
 </p>
 
 * 8. In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
 <p align="center">
-  <img src="Images/query8.png" width="400">
+  <img src="Images/query8.png" width="600">
 </p>
 
 ## Visual Analysis
