@@ -93,11 +93,11 @@ Query the data to specify each of the following aspects of the data. Export the 
 ---
 
 ## References ##
-* [ERD tool](https://www.quickdatabasediagrams.com/)
+* [ERD Tool](https://www.quickdatabasediagrams.com/)
 * [Compound Key](https://en.wikipedia.org/wiki/Composite_key)
 * [SQLAlchemy Documentation](https://docs.sqlalchemy.org/en/latest/core/engines.html#postgresql)
 * [Gitignore Documentation](https://help.github.com/en/github/using-git/ignoring-files)
-* [YouTube Gitignore tutorial](https://www.youtube.com/watch?v=2uaTPmNvH0I)
+* [YouTube Gitignore Tutorial](https://www.youtube.com/watch?v=2uaTPmNvH0I)
 
 ---
 
