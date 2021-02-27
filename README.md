@@ -77,7 +77,7 @@ Query the data to specify each of the following aspects of the data. Export the 
    connection = engine.connect()
    ```
 
-* 2. Create a histogram to visualize the most common salary ranges for employees.
+* 2. Use Matplotlib with Seaborn stylizing to create a histogram to visualize the most common salary ranges for employees.
 <p align="center">
   <img src="Images/OverallSalaryRanges.png" width="400">
 </p>
@@ -102,7 +102,7 @@ Query the data to specify each of the following aspects of the data. Export the 
 * PostgreSQL
 * pgAdmin 4 - PostgreSQL IDE
 * Jupyter Notebook
-* Python - Pandas, Matplotlib, SQLAlchemy, Psycopg2
+* Python - Pandas, SQLAlchemy, Psycopg2, Matplotlib, Seaborn
 
 ---
 
