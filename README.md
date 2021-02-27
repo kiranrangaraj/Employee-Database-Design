@@ -1,60 +1,75 @@
-# sql-challenge
-SQL Homework Assignment for Data Analytics Bootcamp - Trilogy Education, Vanderbilt University
+# Employee Database Design
 
-# Employee Database: A Mystery in Two Parts
+<p align="center">
+  <img src="Images/sql.png" width="400">
+</p>
 
-![sql.png](sql.png)
+## Summary ##
 
-## Background
+This project demonstrates the ability to take six raw employee CSV data files, model and engineer a suitable relational database structure for the data, import the CSV files into the SQL database, and analyze the data through complex queries. SQL concepts in table design, data types, keys, joins, indexes and transactions are discussed in the step-by-step process below. 
 
-It is a beautiful spring day, and it is two weeks since you have been hired as a new data engineer at Pewlett Hackard. Your first major task is a research project on employees of the corporation from the 1980s and 1990s. All that remain of the database of employees from that period are six CSV files.
+Further data analysis is then performed using SQLAlchemy and Psycopg2 libraries in Python Pandas to connect to the SQL Database, inspect the tables, and import information for statistical visualizations using Matplotlib.
 
-In this assignment, you will design the tables to hold data in the CSVs, import the CSVs into a SQL database, and answer questions about the data. In other words, you will perform:
+---
 
-1. Data Modeling/Engineering
+## Process ##
+### Data Modeling
+* 1. Inspect the employee CSV data sets.
+* 2. Determine the data types, primary and foreign keys and other constraints.
+* 2. Sketch out an Entity Relationship Diagram (ERD) of the tables using https://www.quickdatabasediagrams.com/.
 
-2. Data Analysis
+### Data Engineering
+* 1. Create a PostgreSQL database using employee data.
+* 2. Create a table schema according to the ERD to hold each of the CSV files.
+* 3. Ensure the column used for primary key designation was unique to each table, otherwise specified a composite key.
+* 4. Ensure tables were created in the appropriate order to handle foreign keys.
+* 3. Import employee each CSV data file into the corresponding SQL table.
 
-## Instructions
+### Query Analysis 
+Query the data to specify each of the following aspects of the data. Export the output as a new CSV file. 
+* 1. List the following details of each employee: employee number, last name, first name, sex, and salary.
+<p align="center">
+  <img src="Images/query1.png" width="400">
+</p>
 
-#### Data Modeling
+* 2. List first name, last name, and hire date for employees who were hired in 1986.
+<p align="center">
+  <img src="Images/query2.png" width="400">
+</p>
 
-Inspect the CSVs and sketch out an ERD of the tables. Feel free to use a tool like [http://www.quickdatabasediagrams.com](http://www.quickdatabasediagrams.com).
+* 3. List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name.
+<p align="center">
+  <img src="Images/query3.png" width="400">
+</p>
 
-#### Data Engineering
+* 4. List the department of each employee with the following information: employee number, last name, first name, and department name.
+<p align="center">
+  <img src="Images/query4.png" width="400">
+</p>
 
-* Use the information you have to create a table schema for each of the six CSV files. Remember to specify data types, primary keys, foreign keys, and other constraints.
+* 5. List first name, last name, and sex for employees whose first name is "Hercules" and last names begin with "B."
+<p align="center">
+  <img src="Images/query5.png" width="400">
+</p>
 
-  * For the primary keys check to see if the column is unique, otherwise create a [composite key](https://en.wikipedia.org/wiki/Compound_key). Which takes to primary keys in order to uniquely identify a row.
-  * Be sure to create tables in the correct order to handle foreign keys.
+* 6. List all employees in the Sales department, including their employee number, last name, first name, and department name.
+<p align="center">
+  <img src="Images/query6.png" width="400">
+</p>
 
-* Import each CSV file into the corresponding SQL table. **Note** be sure to import the data in the same order that the tables were created and account for the headers when importing to avoid errors.
+* 7. List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
+<p align="center">
+  <img src="Images/query7.png" width="400">
+</p>
 
-#### Data Analysis
+* 8. In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
+<p align="center">
+  <img src="Images/query8.png" width="400">
+</p>
 
-Once you have a complete database, do the following:
+## Visual Analysis
 
-1. List the following details of each employee: employee number, last name, first name, sex, and salary.
-
-2. List first name, last name, and hire date for employees who were hired in 1986.
-
-3. List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name.
-
-4. List the department of each employee with the following information: employee number, last name, first name, and department name.
-
-5. List first name, last name, and sex for employees whose first name is "Hercules" and last names begin with "B."
-
-6. List all employees in the Sales department, including their employee number, last name, first name, and department name.
-
-7. List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
-
-8. In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
-
-## Bonus (Optional)
-
-As you examine the data, you are overcome with a creeping suspicion that the dataset is fake. You surmise that your boss handed you spurious data in order to test the data engineering skills of a new employee. To confirm your hunch, you decide to take the following steps to generate a visualization of the data, with which you will confront your boss:
-
-1. Import the SQL database into Pandas. (Yes, you could read the CSVs directly in Pandas, but you are, after all, trying to prove your technical mettle.) This step may require some research. Feel free to use the code below to get started. Be sure to make any necessary modifications for your username, password, host, port, and database name:
+* 1. Import the SQL database into Pandas using SQLAlchemy and Psycopg2, using the following code to connect to the PostgreSQL database:
 
    ```sql
    from sqlalchemy import create_engine
@@ -62,14 +77,35 @@ As you examine the data, you are overcome with a creeping suspicion that the dat
    connection = engine.connect()
    ```
 
-* Consult [SQLAlchemy documentation](https://docs.sqlalchemy.org/en/latest/core/engines.html#postgresql) for more information.
+* 2. Create a histogram to visualize the most common salary ranges for employees.
+<p align="center">
+  <img src="Images/OverallSalaryRanges.png" width="400">
+</p>
 
-* If using a password, do not upload your password to your GitHub repository. See [https://www.youtube.com/watch?v=2uaTPmNvH0I](https://www.youtube.com/watch?v=2uaTPmNvH0I) and [https://help.github.com/en/github/using-git/ignoring-files](https://help.github.com/en/github/using-git/ignoring-files) for more information.
+* 3. Create a bar chart of average salary by title.
+<p align="center">
+  <img src="Images/AvgSalaryByTitle.png" width="400">
+</p>
 
-2. Create a histogram to visualize the most common salary ranges for employees.
+---
 
-3. Create a bar chart of average salary by title.
+## References ##
+* [ERD tool](https://www.quickdatabasediagrams.com/)
+* [Compound Key](https://en.wikipedia.org/wiki/Composite_key)
+* [SQLAlchemy Documentation](https://docs.sqlalchemy.org/en/latest/core/engines.html#postgresql)
+* [Gitignore Documentation](https://help.github.com/en/github/using-git/ignoring-files)
+* [YouTube Gitignore tutorial](https://www.youtube.com/watch?v=2uaTPmNvH0I)
 
-## Epilogue
+---
 
-Evidence in hand, you march into your boss's office and present the visualization. With a sly grin, your boss thanks you for your work. On your way out of the office, you hear the words, "Search your ID number." You look down at your badge to see that your employee ID number is 499942.
+## Technologies Used ##
+* PostgreSQL
+* pgAdmin 4 - PostgreSQL IDE
+* Jupyter Notebook
+* Python - Pandas, Matplotlib, SQLAlchemy, Psycopg2
+
+---
+
+## Author ##
+Kiran Rangaraj - 2021
+* LinkedIn: [@Kiran Rangaraj](https://www.linkedin.com/in/kiranrangaraj/)
