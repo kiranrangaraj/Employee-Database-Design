@@ -18,7 +18,7 @@ Further data analysis is then performed using SQLAlchemy and Psycopg2 libraries 
 * 2. Determine the data types, primary and foreign keys and other constraints.
 * 3. Sketch out an Entity Relationship Diagram (ERD) of the tables using https://www.quickdatabasediagrams.com/.
 <p align="center">
-  <img src="Images/TableERD.png" width="400">
+  <img src="Images/TableERD.png" width="800">
 </p>
 
 ### Data Engineering
@@ -82,12 +82,12 @@ Query the data to specify each of the following aspects of the data. Export the 
 
 * 2. Use Matplotlib with Seaborn stylizing to create a histogram to visualize the most common salary ranges for employees.
 <p align="center">
-  <img src="Images/OverallSalaryRanges.png" width="400">
+  <img src="Images/OverallSalaryRanges.png" width="550">
 </p>
 
 * 3. Create a bar chart of average salary by title.
 <p align="center">
-  <img src="Images/AvgSalaryByTitle.png" width="400">
+  <img src="Images/AvgSalaryByTitle.png" width="550">
 </p>
 
 ---
