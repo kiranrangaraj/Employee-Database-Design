@@ -120,5 +120,4 @@ Query the data to specify each of the following aspects of the data. Export the 
 ---
 
 ## Author ##
-Kiran Rangaraj - 2021
-* LinkedIn: [@Kiran Rangaraj](https://www.linkedin.com/in/kiranrangaraj/)
+Kiran Rangaraj - LinkedIn: [@Kiran Rangaraj](https://www.linkedin.com/in/kiranrangaraj/)
