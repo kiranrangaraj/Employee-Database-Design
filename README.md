@@ -92,6 +92,16 @@ Query the data to specify each of the following aspects of the data. Export the 
 
 ---
 
+## Data ##
+* [Departments](https://github.com/kiranrangaraj/Employee-Database-Design/blob/master/data/departments.csv)
+* [Employee Information](https://github.com/kiranrangaraj/Employee-Database-Design/blob/master/data/employees.csv)
+* [Employee Number and Department](https://github.com/kiranrangaraj/Employee-Database-Design/blob/master/data/dept_emp.csv)
+* [Manager Number and Department](https://github.com/kiranrangaraj/Employee-Database-Design/blob/master/data/dept_manager.csv)
+* [Salaries](https://github.com/kiranrangaraj/Employee-Database-Design/blob/master/data/salaries.csv)
+* [Titles](https://github.com/kiranrangaraj/Employee-Database-Design/blob/master/data/titles.csv)
+
+---
+
 ## References ##
 * [ERD Tool](https://www.quickdatabasediagrams.com/)
 * [Compound Key](https://en.wikipedia.org/wiki/Composite_key)
